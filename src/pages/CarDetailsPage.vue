@@ -4,7 +4,9 @@
     <!-- : is the same as {{}} but for properties within a tag -->
     <!-- no need for v-if, if not loading.. just :src" " -->
     <img v-if="state.loaded" :src="car.imgUrl" alt="" />
-    <h1 v-else>Loading...</h1>
+    <h1 v-else>
+      Loading...
+    </h1>
   </div>
 </template>
 
@@ -24,20 +26,10 @@ export default {
     //   AppState.activeCar = {}
     // })
     // REVIEW remember you don't need async or state.loaded unless wanting to add the LOADER
-    onMounted(async () => {
-<<<<<<< HEAD
+    onMounted(async() => {
       // route params id is the same name as what we named it in INDEX.js path
       await carsService.getOne(route.params.id)
       state.loaded = true
-=======
-      try {
-        await carsService.getOne(route.params.id)
-      } catch (error) {
-        console.error(error)
-      } finally {
-        state.loaded = true
-      }
->>>>>>> 9d21410195544295bed8b9ed53802a6dc75cca6c
     })
     return {
       state,

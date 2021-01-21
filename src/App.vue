@@ -12,11 +12,7 @@
       </router-link> -->
     </div>
   </nav>
-<<<<<<< HEAD
   <!-- NOTE Router-view allows the Router to determine which component gets loaded -->
-=======
-  <!-- NOTE Router-View allows the Router to determine which component gets loaded -->
->>>>>>> 9d21410195544295bed8b9ed53802a6dc75cca6c
   <router-view />
   <footer class="container-fluid bg-dark text-light">
     <div class="row">

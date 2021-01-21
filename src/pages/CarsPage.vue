@@ -95,7 +95,6 @@ import { reactive, computed, onMounted } from 'vue'
 import { carsService } from '../services/CarsService'
 import { AppState } from '../AppState'
 import Car from '../components/Car.vue'
-import { useRouter } from 'vue-router'
 
 export default {
   name: 'CarsPage',
